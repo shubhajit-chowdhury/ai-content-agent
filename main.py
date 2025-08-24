@@ -59,6 +59,9 @@ async def content_creator_agent(request: TwitterContentRequest):
 
 @app.post("/api/query_agent")
 async def query_agent(request: QueryRequest):
+    
+    if not hasattr(app.state, "message_history"):
+        app.state.message_history = None
 
     message_history = app.state.message_history
 
