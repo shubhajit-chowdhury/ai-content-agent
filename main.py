@@ -1,11 +1,14 @@
 from contextlib import asynccontextmanager
-import uuid
+import json
+import os
+import redis
 from fastapi import FastAPI, APIRouter
 from fastapi.middleware.cors import CORSMiddleware  
 from pydantic import BaseModel
 import uvicorn
+from pydantic_core import to_jsonable_python
 from research_agent import GetTrendingTweetsDeps, research_agent, ResearcherDeps
-
+from pydantic_ai.messages import ModelMessagesTypeAdapter  
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -15,6 +18,14 @@ async def lifespan(app: FastAPI):
     # cleanup when app stops
     app.state.message_history = None
 
+
+redis_client = r = redis.Redis(
+    host=os.getenv("REDIS_HOST"),
+    port=os.getenv("REDIS_PORT"),
+    decode_responses=True,
+    username="default",
+    password=os.getenv("REDIS_PASSWORD"),
+)
 
 app = FastAPI(lifespan=lifespan)
 
@@ -59,12 +70,16 @@ async def content_creator_agent(request: TwitterContentRequest):
 
 @app.post("/api/query_agent")
 async def query_agent(request: QueryRequest):
-    
-    if not hasattr(app.state, "message_history"):
-        app.state.message_history = None
 
-    message_history = app.state.message_history
+    # Get from Redis
+    raw_history = redis_client.get("message_history")
+    if raw_history:
+        # Decode from bytes → str → Python list
+        message_history = ModelMessagesTypeAdapter.validate_python(json.loads(raw_history))
+    else:
+        message_history = None
 
+    # Run agent
     result = await research_agent.run(
         f'Act as an expert director who answers questions and tries to solve business problems. '
         f'Answer the question: "{request.query}". Make sure to hold yourself from rushing. '
@@ -75,7 +90,9 @@ async def query_agent(request: QueryRequest):
         message_history=message_history
     )
 
-    app.state.message_history = result.all_messages()
+    # Serialize before saving to Redis
+    convert_message_json_objects = to_jsonable_python(result.all_messages())
+    redis_client.set("message_history", json.dumps(convert_message_json_objects))
 
     return {"received_data": result.output}
 
