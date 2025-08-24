@@ -1,5 +1,6 @@
 import json
 import os
+from typing import Any
 import redis
 from fastapi import FastAPI, APIRouter
 from fastapi.middleware.cors import CORSMiddleware  
@@ -9,6 +10,7 @@ from pydantic_core import to_jsonable_python
 from research_agent import GetTrendingTweetsDeps, research_agent, ResearcherDeps
 from pydantic_ai.messages import ModelMessagesTypeAdapter
 from dotenv import load_dotenv
+import pickle
 
 
 redis_client = r = redis.Redis(
@@ -61,28 +63,21 @@ async def content_creator_agent(request: TwitterContentRequest):
 
 
 
-def save_history(key: str, messages):
-    """Always store as JSON string"""
-    normalized = to_jsonable_python(messages)
-    redis_client.set(key, json.dumps(normalized))  # always dumps once
 
+def save_history(key: str, messages: Any) -> None:
+    redis_client.set(key, json.dumps(to_jsonable_python(messages)))
 
-def load_history(key: str):
-    """Always load as Python object"""
+def load_history(key: str) -> Any:
     history_raw = redis_client.get(key)
     if not history_raw:
         return None
     
-    try:
-        # Handle both bytes and str
-        if isinstance(history_raw, bytes):
-            history_raw = history_raw.decode("utf-8")
-        
-        history_json = json.loads(history_raw)  # always loads once
-        return ModelMessagesTypeAdapter.validate_python(history_json)
-    except Exception as e:
-        print("⚠️ Error loading history:", e, history_raw)
-        return None
+    # Ensure always string before parsing
+    if isinstance(history_raw, bytes):
+        history_raw = history_raw.decode("utf-8")
+
+    history_json = json.loads(history_raw)
+    return ModelMessagesTypeAdapter.validate_python(history_json)
 
 @app.post("/api/query_agent")
 async def query_agent(request: QueryRequest):
