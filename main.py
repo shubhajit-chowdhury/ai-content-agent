@@ -1,4 +1,3 @@
-from contextlib import asynccontextmanager
 import json
 import os
 import redis
@@ -10,14 +9,6 @@ from pydantic_core import to_jsonable_python
 from research_agent import GetTrendingTweetsDeps, research_agent, ResearcherDeps
 from pydantic_ai.messages import ModelMessagesTypeAdapter  
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    # initialize state when app starts
-    app.state.message_history = None
-    yield
-    # cleanup when app stops
-    app.state.message_history = None
-
 
 redis_client = r = redis.Redis(
     host=os.getenv("REDIS_HOST"),
@@ -27,7 +18,7 @@ redis_client = r = redis.Redis(
     password=os.getenv("REDIS_PASSWORD"),
 )
 
-app = FastAPI(lifespan=lifespan)
+app = FastAPI()
 
 # CORS middleware
 app.add_middleware(
