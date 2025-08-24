@@ -7,7 +7,8 @@ from pydantic import BaseModel
 import uvicorn
 from pydantic_core import to_jsonable_python
 from research_agent import GetTrendingTweetsDeps, research_agent, ResearcherDeps
-from pydantic_ai.messages import ModelMessagesTypeAdapter  
+from pydantic_ai.messages import ModelMessagesTypeAdapter
+from dotenv import load_dotenv
 
 
 redis_client = r = redis.Redis(
@@ -59,16 +60,34 @@ async def content_creator_agent(request: TwitterContentRequest):
     return {"received_data": result.output}
 
 
+
+def save_history(key: str, messages):
+    """Always store as JSON string"""
+    normalized = to_jsonable_python(messages)
+    redis_client.set(key, json.dumps(normalized))  # always dumps once
+
+
+def load_history(key: str):
+    """Always load as Python object"""
+    history_raw = redis_client.get(key)
+    if not history_raw:
+        return None
+    
+    try:
+        # Handle both bytes and str
+        if isinstance(history_raw, bytes):
+            history_raw = history_raw.decode("utf-8")
+        
+        history_json = json.loads(history_raw)  # always loads once
+        return ModelMessagesTypeAdapter.validate_python(history_json)
+    except Exception as e:
+        print("⚠️ Error loading history:", e, history_raw)
+        return None
+
 @app.post("/api/query_agent")
 async def query_agent(request: QueryRequest):
 
-    # Get from Redis
-    raw_history = redis_client.get("message_history")
-    if raw_history:
-        # Decode from bytes → str → Python list
-        message_history = ModelMessagesTypeAdapter.validate_python(json.loads(raw_history))
-    else:
-        message_history = None
+    message_history = load_history("message_history")
 
     # Run agent
     result = await research_agent.run(
@@ -81,9 +100,7 @@ async def query_agent(request: QueryRequest):
         message_history=message_history
     )
 
-    # Serialize before saving to Redis
-    convert_message_json_objects = to_jsonable_python(result.all_messages())
-    redis_client.set("message_history", json.dumps(convert_message_json_objects))
+    save_history("message_history", result.all_messages())
 
     return {"received_data": result.output}
 
