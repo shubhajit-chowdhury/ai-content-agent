@@ -1,0 +1,138 @@
+{
+  "profile_type": "business_context",
+  "business_name": "Hype Design",
+  "founder_name": "Shubhajit Chowdhury",
+  "website_url": "https://hypedesign.in",
+  "industry": "Web Design & Digital Marketing",
+  "business_model": "Service-based digital agency with a focus on high-converting landing pages and web solutions",
+  "core_offers": [
+    "High-converting landing page design",
+    "Custom web development",
+    "UI/UX design",
+    "SEO optimization",
+    "Conversion-focused copywriting",
+    "Website redesign and optimization"
+  ],
+  "offer_tiers": {
+    "free": [
+      "Free landing page audit",
+      "Twitter content (tips, insights, lead magnets)",
+      "Free website design (Pay if you like it)"
+    ],
+    "low_ticket": [
+      "DIY landing page templates",
+      "Quick website performance audits"
+    ],
+    "mid_ticket": [
+      "Custom landing page design package",
+      "SEO & conversion optimization bundle"
+    ],
+    "high_ticket": [
+      "Full website design & development",
+      "Brand strategy + website transformation package"
+    ],
+    "custom": [
+      "Enterprise-level solutions",
+      "Partnership-based growth projects"
+    ]
+  },
+  "revenue_streams": [
+    "Landing page design services",
+    "Website development projects",
+    "UI/UX design packages",
+    "Ongoing SEO retainers",
+    "Custom brand strategy engagements"
+  ],
+  "target_markets": [
+    "Entrepreneurs launching digital products",
+    "9-5 professionals starting side hustles",
+    "Small businesses wanting digital presence",
+    "SaaS startups needing optimized websites"
+  ],
+  "customer_segments": [
+    "Early-stage entrepreneurs",
+    "Small business owners",
+    "Online coaches and creators",
+    "SaaS founders",
+    "Digital service agency owners",
+    "Digital product creators"
+  ],
+  "mission_statement": "To empower entrepreneurs and businesses with high-converting websites that drive growth, amplify their online presence and sells well.",
+  "vision_statement": "To become the go-to digital design agency for entrepreneurs and creators who want websites that don’t just look good, but sell.",
+  "core_values": [
+    "Conversion-first design",
+    "Simplicity & clarity",
+    "Customer-centricity",
+    "Creativity with purpose",
+    "Sustainable digital growth",
+    "Modern and trending design"
+  ],
+  "unique_selling_proposition": "We don’t just design websites — we craft digital experiences that convert visitors into paying customers.",
+  "competitive_advantages": [
+    "Specialization in high-converting landing pages",
+    "Full-stack expertise: design + development + copy + SEO",
+    "Founder-led creative direction",
+    "Lean, fast, and affordable compared to bigger agencies",
+    "Continious communication and collaboration with clients"
+  ],
+  "competitors": [
+    "Webflow-focused design studios",
+    "Freelance web designers",
+    "Traditional digital marketing agencies"
+  ],
+  "key_partnerships": [
+    "Freelance copywriters",
+    "SEO specialists",
+    "Marketing consultants"
+  ],
+  "distribution_channels": [
+    "Twitter/X (primary)",
+    "Website",
+    "Word of mouth & referrals"
+  ],
+  "tech_stack": [
+    "React (Next.js)",
+    "Django/Python",
+    "TailwindCSS",
+    "WordPress (for some clients)",
+    "Figma",
+    "SEO tools (Ahrefs, Google Analytics)"
+  ],
+  "team_structure": {
+    "leadership": ["Founder/Creative Director (Shubhajit Chowdhury)"],
+    "marketing": ["Content strategist (freelance)", "Social media assistant (planned)"],
+    "product": ["Design lead (founder)", "Developers (freelance/contract-based)"],
+    "sales": ["Founder-led sales"],
+    "support": ["Client support handled by founder"],
+    "ops": ["Founder + automation tools (Zapier, n8n)"]
+  },
+  "current_challenges": [
+    "Consistent client acquisition",
+    "Scaling beyond founder-led delivery",
+    "Building authority in a competitive niche",
+    "Build inbound lead funnel through content"
+  ],
+  "key_metrics": [
+    "Monthly client acquisition rate",
+    "Conversion rate of website visitors",
+    "Engagement and growth on Twitter",
+    "Average revenue per client project"
+  ],
+  "short_term_goals": [
+    "Close 2 new clients in the next 1 months",
+    "Grow Twitter following to 5,000+",
+    "Launch free landing page audit funnel"
+  ],
+  "long_term_goals": [
+    "Establish Hype Design as the go-to agency for landing pages",
+    "Build a small in-house team",
+    "Develop recurring revenue streams via templates or retainers",
+    "Expand into SaaS-focused web design niche"
+  ],
+  "brand_assets": {
+    "logo": "https://hypedesign.in/assets/img/logo/HypeDesign_logo.svg",
+    "typography": "Modern, sans-serif, conversion-focused fonts",
+    "color_palette": "Black, white, electric blue (bold, high-contrast for conversions)",
+    "voice_guidelines": "Confident, clear, slightly playful, authority-driven with focus on results"
+  }
+}

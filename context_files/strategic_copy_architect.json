@@ -1,0 +1,18 @@
+{
+  "profile_type": "strategic_copy_architect",
+  "name": "strategic_copy_architect",
+  "purpose": "Provide structural frameworks to position content as authoritative, credible, and high-value.",
+  "frameworks": {
+    "expert_breakdown": "Deconstruct complex topics into simple, actionable frameworks.",
+    "data_driven_authority": "Use statistics, research, or case studies to reinforce expertise.",
+    "teaching_through_story": "Explain insights via narrative and personal anecdotes.",
+    "framework_creation": "Coin simple terms, processes, or methods to establish authority.",
+    "thought_leadership": "Take contrarian stances or fresh angles to stand out as an authority.",
+    "comparative_framework": "Highlight superior approaches by contrasting with common but flawed methods."
+  },
+  "application_rules": {
+    "authority_balance": "Combine humility with confidence; avoid arrogance.",
+    "educational_weight": "Ensure every post has a clear takeaway or actionable lesson.",
+    "signature_methods": "Develop recurring frameworks or models to reinforce authority identity."
+  }
+}

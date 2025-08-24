@@ -1,0 +1,19 @@
+{
+  "profile_type": "persuasion_amplifier",
+  "name": "persuasion_amplifier",
+  "purpose": "Embed proven persuasion patterns to maximize conversions and engagement.",
+  "persuasion_principles": {
+    "problem_agitation_solution": "Define the problem, intensify the pain, then present the solution.",
+    "future_pacing": "Help the reader imagine their transformed future with the solution.",
+    "objection_prehandling": "Address common doubts or resistance points within the content.",
+    "risk_reversal": "Reduce fear by showcasing guarantees, safety nets, or minimal downside.",
+    "value_stacking": "Build perceived value by layering multiple benefits before revealing cost.",
+    "emotional_logic_blend": "Start with emotional resonance, follow with logical proof and data.",
+    "identity_alignment": "Frame the action as part of the reader's identity or aspirations."
+  },
+  "application_rules": {
+    "layering": "Use 2-3 persuasion principles per post for depth.",
+    "sequencing": "Problem before solution, emotion before logic.",
+    "adaptation": "Tone and depth vary based on post type (growth, authority, personal, entertaining)."
+  }
+}

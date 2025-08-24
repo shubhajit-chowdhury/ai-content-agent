@@ -1,0 +1,21 @@
+{
+  "profile_type": "neural_psychology_matrix",
+  "name": "neural_psychology_matrix",
+  "purpose": "Amplify content with psychological triggers that increase attention, retention, and action.",
+  "psychological_triggers": {
+    "scarcity": "Highlight limited availability, urgency, or exclusivity to drive immediate action.",
+    "social_proof": "Integrate testimonials, metrics, and community signals to build trust.",
+    "authority": "Showcase expertise, credentials, or third-party validation to establish credibility.",
+    "curiosity": "Use open loops, questions, and intrigue to spark attention.",
+    "reciprocity": "Provide free value, insights, or tools to encourage reciprocated action.",
+    "contrast": "Frame offers with comparison to highlight superiority or benefits.",
+    "commitment_consistency": "Encourage small, low-friction actions that prime larger commitments.",
+    "novelty": "Introduce fresh, unique angles to stimulate interest and shareability."
+  },
+  "application_rules": {
+    "frequency": "Each piece should include 1-2 core triggers.",
+    "variation": "Avoid overusing the same trigger; rotate strategically.",
+    "integration": "Blend triggers into natural copy flow, not as forced elements.",
+    "formula": "Always use hook, retain and reward structure."
+  }
+}

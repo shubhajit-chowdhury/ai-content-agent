@@ -1,0 +1,56 @@
+{
+  "profile_type": "platform_constraints",
+  "platform": "twitter",
+  "character_limit": 280,
+  "thread_rules": {
+    "max_tweets": 10,
+    "continuation_format": "Use '🧵' or '(1/…)' to indicate thread parts",
+    "thread_opener_style": "Strong hook or statement to grab attention",
+    "thread_closer_style": "Summarize key point + CTA"
+  },
+  "link_usage": {
+    "max_links_per_tweet": 1,
+    "preferred_format": "Use short, clean URLs",
+    "link_positioning": "Place towards the end of tweet",
+    "required": false
+  },
+  "hashtag_rules": {
+    "max_hashtags": 0,
+    "preference": "Avoid unless highly relevant"
+  },
+  "media_rules": {
+    "max_images": 4,
+    "gif_allowed": true,
+    "video_length_limit_seconds": 140,
+    "media_positioning": "Media should enhance main message, not replace it"
+  },
+  "formatting_rules": {
+    "line_breaks": "Allowed for readability, avoid excessive breaks",
+    "bullet_points": "Use '-' or '•' for clarity, avoid long lists",
+    "emphasis": "Use CAPS sparingly for emphasis",
+    "symbols": "Allowed (✓, →, ⚡) but don’t overuse",
+    "quotes": "Keep short and impactful"
+  },
+  "emoji_usage": {
+    "allowed": true,
+    "placement": "Use for emphasis or tone, not filler",
+    "max_per_tweet": 5
+  },
+  "cta_guidelines": {
+    "style": "Clear, concise, action-oriented"
+  },
+  "prohibited_styles": [
+    "Overstuffed hashtags",
+    "Clickbait without value",
+    "Excessive emojis",
+    "Walls of text",
+    "Overly complex sentence structures"
+  ],
+  "best_practices": [
+    "Front-load value in first 100 characters",
+    "Use conversational tone",
+    "Break ideas into scannable chunks",
+    "Leverage storytelling and examples",
+    "Mix authority, growth, personal, and entertaining content"
+  ]
+}

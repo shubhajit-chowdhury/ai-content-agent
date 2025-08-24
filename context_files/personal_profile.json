@@ -1,0 +1,63 @@
+{
+  "profile_type": "personal_profile",
+  "full_name": "Shubhajit Chowdhury",
+  "nickname": "Subho",
+  "current_role": "Founder & Full Stack Developer at Hype Design",
+  "personal_brand_positioning": "Tech entrepreneur and full-stack developer building high-converting web experiences, SaaS tools, and automation systems.",
+  "backstory": {
+    "origin": "Started as a self-taught full-stack developer with a passion for solving problems through code.",
+    "journey": "Worked on diverse projects involving SaaS apps, automation, AI, and high-converting landing pages. Built Hype Design to help entrepreneurs escape low-converting websites.",
+    "milestones": [
+      "Over 4 years of professional development experience",
+      "Founded Hype Design (2024)",
+      "Built SaaS tools like Leadscraper for developers to generate leads",
+      "Experimenting with AI agents and automation frameworks"
+    ],
+    "lessons_learned": [
+      "Consistency in shipping beats waiting for perfection",
+      "Good design paired with conversion psychology multiplies results",
+      "Automation is leverage for solopreneurs and small teams"
+    ]
+  },
+  "expertise": [
+    "Full-stack development (Django, React, Next.js, FastAPI)",
+    "Landing page optimization & conversion copywriting",
+    "SaaS product development",
+    "Cloud deployment (AWS, GCP)",
+    "Landing page design and development"
+  ],
+  "personal_values": [
+    "Authenticity",
+    "Simplicity",
+    "Innovation",
+    "Continuous learning",
+    "Helping others grow"
+  ],
+  "content_pillars": [
+    "Breakdowns of high-converting landing pages",
+    "Personal journey of building Hype Design",
+    "Behind-the-scenes of experiments & projects",
+    "Actionable tips for solopreneurs and developers"
+  ],
+  "audience_resonance": "Aspiring entrepreneurs, developers, and solopreneurs who want to use design, and SaaS tools to scale faster.",
+  "tone": "Authentic, helpful, slightly playful, but always practical.",
+  "content_preferences": {
+    "storytelling_depth": "Mix of short tactical insights and occasional deeper personal stories",
+    "preferred_formats": [
+      "Short-form Twitter posts",
+      "Actionable threads",
+      "Engaging hooks with storytelling"
+    ],
+    "topics_to_avoid": [
+      "Generic motivational quotes",
+      "Overly technical deep dives without context",
+      "Clickbait without value"
+    ]
+  },
+  "goals_with_personal_brand": [
+    "Build trust and authority in SaaS and web design niche",
+    "Attract clients for Hype Design",
+    "Grow audience on Twitter with valuable insights",
+    "Build a reputation as a founder-creator who shares his journey"
+  ]
+}
