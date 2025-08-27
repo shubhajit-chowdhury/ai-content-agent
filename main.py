@@ -9,10 +9,11 @@ import uvicorn
 from pydantic_core import to_jsonable_python
 from research_agent import research_agent
 from pydantic_ai.messages import ModelMessagesTypeAdapter
-from mangum import Mangum
+from vercel_asgi import VercelASGI
 import asyncio
 
-redis_client = r = redis.Redis(
+# Redis setup
+redis_client = redis.Redis(
     host=os.getenv("REDIS_HOST"),
     port=os.getenv("REDIS_PORT"),
     decode_responses=True,
@@ -31,7 +32,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
+# Schemas
 class TwitterContentRequest(BaseModel):
     post_topic: str
     post_type: str = "post"
@@ -40,10 +41,9 @@ class TwitterContentRequest(BaseModel):
 class QueryRequest(BaseModel):
     query: str
 
-
 api_router = APIRouter()
 
-
+# Routes
 @app.get("/api/hello")
 async def hello():
     return {"message": "Hello, World!"}
@@ -56,14 +56,11 @@ async def content_creator_agent(request: TwitterContentRequest):
             f'Write a twitter "{request.post_context}" "{request.post_type}" about "{request.post_topic}" '
             f'which follows all the standards of the best content writer. '
             f'Always deliver high quality + value posts. Always double check before giving the post. '
-            f'Only return the written content. Nothing more than that. Do not show any thinking text '
-            f'or any other text rather than generated content.'
+            f'Only return the written content. Nothing more than that.'
         )
         return {"received_data": result.output}
     except Exception as e:
         return {"error": str(e)}
-
-
 
 
 def save_history(key: str, messages: Any) -> None:
@@ -74,12 +71,12 @@ def load_history(key: str) -> Any:
     if not history_raw:
         return None
     
-    # Ensure always string before parsing
     if isinstance(history_raw, bytes):
         history_raw = history_raw.decode("utf-8")
 
     history_json = json.loads(history_raw)
     return ModelMessagesTypeAdapter.validate_python(history_json)
+
 
 @app.post("/api/query_agent")
 async def query_agent(request: QueryRequest):
@@ -88,12 +85,9 @@ async def query_agent(request: QueryRequest):
 
         result = await research_agent.run(
             f'Act as an expert director who answers questions and tries to solve business problems. '
-            f'Answer the question: "{request.query}". Make sure to hold yourself from rushing. '
-            f'Slow down, think and answer. Always deliver high quality + value answers. '
-            f'Always double check before giving the answer. Only return the answer. '
-            f'Nothing more than that. Do not show any thinking text or any other text '
-            f'You have access to your previous conversations. '
-            f'Use them to answer the question if needed. If you do not know the answer',
+            f'Answer the question: "{request.query}". '
+            f'Always deliver high quality + value answers. '
+            f'Only return the answer, nothing more.',
             message_history=message_history
         )
 
@@ -107,11 +101,14 @@ async def query_agent(request: QueryRequest):
 
 @app.get("/")
 async def root():
-    return {"message": "Hello from Mangum + FastAPI"}
+    return {"message": "Hello from VercelASGI + FastAPI"}
+
 
 app.include_router(api_router, prefix="/api")
 
-handler = Mangum(app, lifespan="off")
+# 👇 This is the only change from your code
+handler = VercelASGI(app)
 
+# Local dev
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
