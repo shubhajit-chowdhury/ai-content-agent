@@ -1,21 +1,21 @@
 {
   "profile_type": "neural_psychology_matrix",
   "name": "neural_psychology_matrix",
-  "purpose": "Amplify content with psychological triggers that increase attention, retention, and action.",
+  "purpose": "Amplify premium content with psychological triggers that increase authority, urgency, and demand.",
   "psychological_triggers": {
-    "scarcity": "Highlight limited availability, urgency, or exclusivity to drive immediate action.",
-    "social_proof": "Integrate testimonials, metrics, and community signals to build trust.",
-    "authority": "Showcase expertise, credentials, or third-party validation to establish credibility.",
-    "curiosity": "Use open loops, questions, and intrigue to spark attention.",
-    "reciprocity": "Provide free value, insights, or tools to encourage reciprocated action.",
-    "contrast": "Frame offers with comparison to highlight superiority or benefits.",
-    "commitment_consistency": "Encourage small, low-friction actions that prime larger commitments.",
-    "novelty": "Introduce fresh, unique angles to stimulate interest and shareability."
+    "scarcity": "Highlight exclusivity: limited client slots, no templates, custom only.",
+    "social_proof": "Use teardowns, mockups, and frameworks as proof until real case studies arrive.",
+    "authority": "Position as specialist: premium landing page surgeon who fixes what others break.",
+    "curiosity": "Open loops with teardown teasers and premium vs cheap comparisons.",
+    "reciprocity": "Offer free audits and teardown value → leads to paid premium clients.",
+    "contrast": "Show ROI difference between cheap websites vs premium conversion-focused design.",
+    "commitment_consistency": "Encourage small actions (DM ‘Audit’) → lead to premium projects.",
+    "novelty": "Fresh redesigns, mockups, AI experiments → stand out as innovative premium brand."
   },
   "application_rules": {
-    "frequency": "Each piece should include 1-2 core triggers.",
-    "variation": "Avoid overusing the same trigger; rotate strategically.",
-    "integration": "Blend triggers into natural copy flow, not as forced elements.",
-    "formula": "Always use hook, retain and reward structure."
+    "frequency": "Blend 1–2 triggers per post.",
+    "variation": "Rotate triggers to avoid predictability.",
+    "integration": "Embed triggers into premium storytelling, not as gimmicks.",
+    "formula": "Hook → Pain/Curiosity → Premium Solution."
   }
 }

@@ -1,73 +1,71 @@
 {
   "business_name": "Hype Design",
-  "business_type": "Web Design & Development Agency",
+  "business_type": "Premium Web Design & Landing Page Agency",
   "website": "https://hypedesign.in",
   "industry_focus": [
-    "Entrepreneurs",
-    "Side Hustlers",
-    "Small Business Owners",
-    "9-5 Professionals starting online businesses",
-    "Saas Businesses, Digital products, Course Creators, Digital service agency"
+    "High-ticket coaches",
+    "Course creators",
+    "SaaS founders",
+    "Digital product creators",
+    "Agencies & consultants with premium offers"
   ],
   "target_audience": {
     "primary": {
-      "role": ["Founders", "Course Creators", "Small Business Owners", "Digital product creators","Digital service agency owners"],
-      "age_range": "25-45",
+      "role": ["Founders", "Coaches", "Course Creators", "SaaS Founders", "Consultants"],
+      "age_range": "27-45",
       "goals": [
-        "Build a high-converting online presence",
-        "Launch a new product or service quickly",
-        "Turn visitors into paying customers",
-        "Differentiate from competitors with professional design",
-        "High Quality design without breaking the bank"
+        "Scale their revenue with conversion-first design",
+        "Launch premium offers with high-converting pages",
+        "Build a trustworthy, premium brand image",
+        "Stop wasting ad spend on underperforming websites",
+        "Turn visitors into paying clients consistently"
       ],
       "pain_points": [
-        "Current website looks outdated or unprofessional",
-        "Low conversion rates despite having traffic",
-        "Difficulty communicating value clearly",
-        "Wasting money on ads that don’t convert",
-        "Limited time and tech knowledge to DIY",
-        "Not able to write copy that converts"
+        "Current website looks nice but doesn’t convert",
+        "Losing revenue due to low-performing landing pages",
+        "Ad spend wasted on poor funnels",
+        "Struggling to communicate high-ticket value clearly",
+        "DIY or cheap design damaged brand trust"
       ]
     },
     "secondary": {
-      "role": ["Marketing Managers", "Growth Hackers", "Freelancers"],
-      "age_range": "25-45",
+      "role": ["Marketing Directors", "Agency Owners", "Growth Hackers"],
+      "age_range": "27-45",
       "goals": [
-        "Boost sales through better landing pages",
-        "Get measurable ROI from campaigns",
-        "Build credibility and trust online",
-        "Improve user experience and engagement",
-        "Create a professional brand image"
+        "Increase ROI from campaigns",
+        "Prove funnel effectiveness to leadership",
+        "Use design as leverage for growth",
+        "Position brand as premium"
       ],
       "pain_points": [
-        "Inconsistent brand message",
-        "Lack of mobile responsiveness",
-        "Poor SEO and copywriting",
-        "Difficulty in tracking conversions"
+        "Inconsistent conversion rates",
+        "Design not aligned with premium positioning",
+        "Difficulty in scaling offer launches",
+        "Need for ROI-focused creative support"
       ]
     }
   },
-  "value_proposition": "We design and build high-converting landing pages that help entrepreneurs and businesses turn clicks into clients. No templates — 100% custom design focused on conversions.",
+  "value_proposition": "We build premium, high-converting landing pages that transform clicks into clients. No templates. 100% custom strategy and design built for ROI.",
   "key_offers": [
-    "Landing Page Design & Development",
-    "UI/UX Design",
-    "Copywriting optimized for conversions",
-    "SEO-friendly structure",
-    "Fast deployment & mobile-first designs",
-    "Ongoing support and optimization",
-    "Branding and visual identity",
-    "Pocket-friendly pricing for startups and small businesses"
+    "Premium Landing Page Design & Development",
+    "Conversion-focused UI/UX Design",
+    "High-ticket Sales Page Design",
+    "Conversion Copywriting",
+    "A/B Testing & Optimization",
+    "Mobile-first, ROI-driven deployment",
+    "Brand Strategy & Visual Identity"
   ],
   "tone_of_voice": [
-    "Confident",
-    "Playful but professional",
-    "Conversion-focused",
-    "Straightforward and clear"
+    "Authoritative",
+    "Direct",
+    "Premium-focused",
+    "Conversion-first"
   ],
   "twitter_strategy_goals": [
-    "Establish authority in landing page design & conversions",
-    "Educate audience on best practices",
-    "Share insights on design, copywriting, and conversions",
-    "Build trust and attract inbound leads"
+    "Position Hype Design as the premium landing page agency",
+    "Educate on conversion-first design principles",
+    "Attract inbound leads through authority and proof",
+    "Build exclusivity by limiting availability",
+    "Grow audience of premium clients and partners"
   ]
 }

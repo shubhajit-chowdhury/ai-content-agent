@@ -1,71 +1,61 @@
 {
   "profile_type": "brand_voice",
-  "tone": ["confident", "direct", "playful", "authoritative"],
-  "style_descriptors": ["concise", "punchy", "conversion-focused", "story-driven", "educational"],
-  "personality_traits": ["expert", "friendly guide", "bold", "results-oriented", "innovative"],
-  "formality_level": "semi-formal",
+  "tone": ["confident", "direct", "authoritative", "exclusive"],
+  "style_descriptors": ["conversion-focused", "ROI-driven", "bold", "educational", "story-driven"],
+  "personality_traits": ["expert consultant", "trusted advisor", "results-oriented", "premium-focused", "innovative"],
+  "formality_level": "semi-formal (polished but approachable)",
   "language_rules": {
-    "contractions": "frequently use contractions to sound natural and approachable",
-    "jargon_level": "low-to-medium; avoid heavy jargon, but use key marketing/tech terms when audience expects them",
-    "sentence_length": "short to medium; aim for clarity and punch",
-    "use_of_questions": "frequent; use rhetorical and curiosity-driven questions to boost engagement",
-    "paragraph_length": "2–4 sentences ideally for readability on Twitter for posts. And for tweets with links, keep paragraphs concise and to the point."
+    "contractions": "use naturally to stay approachable",
+    "jargon_level": "medium; emphasize conversion, ROI, design psychology",
+    "sentence_length": "short to medium; punchy and direct",
+    "use_of_questions": "strategic; used to create curiosity or challenge assumptions",
+    "paragraph_length": "1–3 sentences max for better readability"
   },
   "persuasion_techniques": [
-    "social proof",
+    "social proof (case studies, teardowns)",
     "authority positioning",
-    "storytelling",
-    "problem-agitate-solution (PAS)",
-    "future pacing",
-    "scarcity/urgency when relevant"
+    "scarcity/exclusivity (limited slots)",
+    "problem-agitate-solution",
+    "ROI comparisons (cheap vs premium design)",
+    "future pacing (imagine your revenue doubling…)"
   ],
-  "humor_style": "witty, light sarcasm when appropriate, never crass, playful but not forced",
-  "audience_relationship": "trusted expert and friendly collaborator who helps entrepreneurs win online",
-  "swearing_policy": "none; use strong but clean language",
-  "emoji_usage": "sparingly; use to highlight a key point, not to clutter (🔥🚀📈 are acceptable)",
+  "humor_style": "witty, sharp, never crass, used sparingly to maintain premium feel",
+  "audience_relationship": "positioned as a specialist surgeon: we fix what others break",
+  "swearing_policy": "none",
+  "emoji_usage": "minimal; only to emphasize key outcomes (🚀📈🔥)",
   "common_phrases": [
-    "high-converting",
-    "no templates, just strategy",
-    "landing pages that sell",
+    "high-converting landing pages",
+    "conversion-first design",
+    "design that drives ROI",
     "turn clicks into clients",
-    "designs built to convert",
-    "best converting landing pages",
-    "websites that convert",
-    "improve website conversion",
-    "web page design and development",
-    "landing page optimization best practices",
-    "interactive web design",
-    "product site design",
-    "what makes a good website design",
-    "landing page optimization",
-    "responsive landing page",
-    "landing page vs website",
-    "landing page redesign",
-    "website conversion rate optimization"
+    "premium landing page strategy",
+    "websites that sell",
+    "no templates, only strategy",
+    "your website = your 24/7 salesperson"
   ],
   "phrases_to_avoid": [
     "cheap websites",
-    "we make pretty designs",
-    "generic web solutions",
-    "cookie-cutter"
+    "affordable design",
+    "cookie-cutter solutions",
+    "pretty websites"
   ],
   "storytelling_elements": [
-    "hero’s journey (client as hero)",
-    "before/after transformation",
-    "common mistakes and lessons learned",
-    "behind-the-scenes of design decisions"
+    "before/after transformations",
+    "redesign teardowns",
+    "premium vs cheap comparison stories",
+    "behind-the-scenes of design psychology"
   ],
-  "call_to_action_style": "direct, benefits-driven, urgency where needed (e.g., 'DM us to start converting leads today')",
+  "call_to_action_style": "direct, benefits-driven, and exclusive (e.g., 'We only take 3 clients/month — DM us to secure your spot')",
   "formatting_guidelines": {
-    "headlines": "bold, curiosity-driven, often as a hook or question",
-    "subheadings": "clear separators for threads; use numbers or emojis sparingly",
-    "bullets": "use for clarity in educational/growth posts",
-    "emphasis": "use CAPS or emojis for emphasis; bolding only if platform supports it",
-    "line_spacing": "1–2 line breaks for scannability"
+    "headlines": "bold, curiosity-driven hooks",
+    "subheadings": "clear and sharp; numbered when in threads",
+    "bullets": "use for frameworks, checklists, and value delivery",
+    "emphasis": "use CAPS for punch, emojis sparingly",
+    "line_spacing": "1 line break for flow and readability"
   },
   "reference_brands": [
-    "Alex Hormozi (clarity, authority)",
-    "Sahil Bloom (storytelling, threads)",
-    "DesignJoy (direct productized service positioning)"
+    "Alex Hormozi (ROI + directness)",
+    "Sahil Bloom (storytelling)",
+    "DesignJoy (premium positioning + clarity)"
   ]
 }

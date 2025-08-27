@@ -1,19 +1,19 @@
 {
   "profile_type": "persuasion_amplifier",
   "name": "persuasion_amplifier",
-  "purpose": "Embed proven persuasion patterns to maximize conversions and engagement.",
+  "purpose": "Maximize conversions and engagement by blending premium positioning with proven persuasion frameworks.",
   "persuasion_principles": {
-    "problem_agitation_solution": "Define the problem, intensify the pain, then present the solution.",
-    "future_pacing": "Help the reader imagine their transformed future with the solution.",
-    "objection_prehandling": "Address common doubts or resistance points within the content.",
-    "risk_reversal": "Reduce fear by showcasing guarantees, safety nets, or minimal downside.",
-    "value_stacking": "Build perceived value by layering multiple benefits before revealing cost.",
-    "emotional_logic_blend": "Start with emotional resonance, follow with logical proof and data.",
-    "identity_alignment": "Frame the action as part of the reader's identity or aspirations."
+    "problem_agitation_solution": "Expose costly mistakes (wasted ad spend, low conversion), intensify the pain, then present premium solutions.",
+    "future_pacing": "Help founders visualize the ROI of premium design (e.g., doubling conversions without increasing ad spend).",
+    "objection_prehandling": "Counter resistance around pricing by showing the cost of cheap design vs ROI of premium.",
+    "risk_reversal": "Showcase audits, teardown proof, and limited premium slots to reduce fear.",
+    "value_stacking": "Layer benefits: premium design + copy + psychology + ROI = irresistible.",
+    "emotional_logic_blend": "Start with emotional pain (lost sales), follow with data-driven proof.",
+    "identity_alignment": "Frame premium design as part of their identity: serious founders invest in serious websites."
   },
   "application_rules": {
-    "layering": "Use 2-3 persuasion principles per post for depth.",
-    "sequencing": "Problem before solution, emotion before logic.",
-    "adaptation": "Tone and depth vary based on post type (growth, authority, personal, entertaining)."
+    "layering": "Use 2-3 persuasion principles per post with premium framing.",
+    "sequencing": "Problem before solution, emotion before ROI data.",
+    "adaptation": "Growth = bold claims; Authority = frameworks; Personal = premium lessons."
   }
 }

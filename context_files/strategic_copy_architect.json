@@ -1,18 +1,20 @@
 {
   "profile_type": "strategic_copy_architect",
   "name": "strategic_copy_architect",
-  "purpose": "Provide structural frameworks to position content as authoritative, credible, and high-value.",
+  "purpose": "Provide premium copy frameworks to position Hype Design as an authoritative, ROI-driven, and exclusive landing page partner.",
   "frameworks": {
-    "expert_breakdown": "Deconstruct complex topics into simple, actionable frameworks.",
-    "data_driven_authority": "Use statistics, research, or case studies to reinforce expertise.",
-    "teaching_through_story": "Explain insights via narrative and personal anecdotes.",
-    "framework_creation": "Coin simple terms, processes, or methods to establish authority.",
-    "thought_leadership": "Take contrarian stances or fresh angles to stand out as an authority.",
-    "comparative_framework": "Highlight superior approaches by contrasting with common but flawed methods."
+    "expert_breakdown": "Deconstruct complex design + conversion psychology into premium, actionable frameworks.",
+    "data_driven_authority": "Use ROI stats, teardown results, and premium comparisons to establish authority.",
+    "teaching_through_story": "Show founder journey and teardown narratives as teaching tools.",
+    "framework_creation": "Develop signature models (e.g., '5-Second Rule Framework', 'Clarity > Creativity Formula').",
+    "thought_leadership": "Take contrarian stances (e.g., 'pretty websites kill sales') to stand out as a premium voice.",
+    "comparative_framework": "Contrast cheap/DIY approaches vs premium/ROI-driven design to highlight superiority.",
+    "scarcity_positioning": "Frame offers with exclusivity and limited availability for premium positioning."
   },
   "application_rules": {
-    "authority_balance": "Combine humility with confidence; avoid arrogance.",
-    "educational_weight": "Ensure every post has a clear takeaway or actionable lesson.",
-    "signature_methods": "Develop recurring frameworks or models to reinforce authority identity."
+    "authority_balance": "Be confident, premium, and direct — no downplaying expertise.",
+    "educational_weight": "Every post must deliver value (ROI-focused takeaways, frameworks, or insights).",
+    "signature_methods": "Use recurring proprietary terms/methods to reinforce Hype Design as the premium authority.",
+    "conversion_alignment": "Always tie insights back to ROI, conversions, and premium positioning."
   }
 }

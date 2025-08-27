@@ -138,7 +138,7 @@ async def list_context_files(
         for file in files:
             if file in ['business_context_profile.json', 'icp_profile.json', 'brand_voice_profile.json', 'content_calendar.md']:
                 core_files.append(file)
-            elif file in ['product_strategy_profile.json', 'personal_profile.json']:
+            elif file in ['personal_profile.json']:
                 conditional_files.append(file)
             elif 'prompt.md' in file:
                 twitter_arch_files.append(file)
