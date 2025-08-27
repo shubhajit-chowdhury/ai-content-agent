@@ -9,8 +9,6 @@ import uvicorn
 from pydantic_core import to_jsonable_python
 from research_agent import research_agent
 from pydantic_ai.messages import ModelMessagesTypeAdapter
-from vercel_asgi import VercelASGI
-import asyncio
 
 # Redis setup
 redis_client = redis.Redis(
@@ -106,9 +104,7 @@ async def root():
 
 app.include_router(api_router, prefix="/api")
 
-# 👇 This is the only change from your code
-handler = VercelASGI(app)
 
-# Local dev
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
