@@ -4,7 +4,6 @@ from pydantic_ai import Agent, RunContext
 from datetime import datetime
 from all_models import get_model
 from pydantic_ai.messages import ModelMessage
-from pydantic_ai.common_tools.duckduckgo import duckduckgo_search_tool
 import logging
 import uuid
 
@@ -46,7 +45,6 @@ async def keep_recent_messages(messages: list[ModelMessage]) -> list[ModelMessag
 research_agent = Agent(
     get_model,
     system_prompt=system_prompt,
-    tools=[duckduckgo_search_tool()],
     history_processors=[keep_recent_messages]
     )
 

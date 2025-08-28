@@ -60,9 +60,6 @@
 <available_tools>
     READING TOOLS (read files):
 	•	read_system_files → Reads any file and returs the text
-
-	SEARCHING WEB (search web):
-	•	duckduckgo_search_tool → Search web to fill any knoledge gap or recent data.
 </available_tools>
 
 <activation_rules>
